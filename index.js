@@ -10,9 +10,20 @@ let card = document.getElementById("card")
     
     
     
+//Event listeners for click and enter
 
-getWeatherBtn.addEventListener("click", function (){
-   
+getWeatherBtn.addEventListener("click", getWeather)
+document.addEventListener("keydown", function(event) {
+  if (event.keyCode === 13) {
+    getWeather();
+  }
+});
+
+ 
+//Function that does everything lol
+ 
+function getWeather () {
+    
    if (cityInput.value !== ""&& cityInput.value !== undefined) {
     
     fetch (`https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&appid=e23500ef96a823d95fb0ddc49db5b795&units=imperial`) 
@@ -31,14 +42,11 @@ getWeatherBtn.addEventListener("click", function (){
 `
 
     })}
+
     
     cityInput.value = ""
     
-})
-
- 
-
-    
+}
 
 
 
