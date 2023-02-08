@@ -2,8 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
    background-image: url("images/pexels-krivec-ales-552789.jpg");
-   background-size: cover;
-    background-repeat: no-repeat
+   background-size: cover
 }
 
 h1 {
