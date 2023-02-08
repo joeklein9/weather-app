@@ -3,8 +3,7 @@ html, body {
     padding: 0;
    background-image: url("images/pexels-krivec-ales-552789.jpg");
    background-size: cover;
-   background-repeat: no-repeat;
-    
+   background-repeat:no-repeat;
    
 }
 
@@ -23,8 +22,9 @@ h1 {
 
 .city-weather-container {
     margin-top:15px;
+    margin-bottom:15px;
     font-family: 'Maven Pro', sans-serif;
-    font-size:50px;
+    font-size:20px;
     text-align:center;
     color:white;
 }
@@ -84,4 +84,25 @@ button {
 #input-label {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:white;
+}
+
+
+.card {
+    visibility: hidden;
+    display:flex;
+    flex-direction:column;
+    height:50%;
+    width:50%;
+    padding:5px;
+    background-color:black;
+    opacity:0.7;
+    border-radius:2%;
+    color:white;
+}
+
+
+
+
+.bold {
+    font-weight: bold;
 }
