@@ -14,7 +14,7 @@ getWeatherBtn.addEventListener("click", function (){
         .then (response => response.json())
         .then (data => {
             
-        cityDisplay.innerHTML = data.name
+        if (data.name !== undefined) {cityDisplay.innerHTML = data.name}
         weatherDisplay.innerHTML = `${Math.floor (data.main.temp)}°` 
     })}
     
