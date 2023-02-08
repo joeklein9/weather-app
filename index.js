@@ -30,7 +30,7 @@ function getWeather () {
         .then (response => response.json())
         .then (data => {
             
-        if (data.name !== undefined) {cityDisplay.innerHTML = data.name}
+        if (data.name !== undefined) {cityDisplay.innerHTML = `${data.name}, ${data.sys.country}`}
         card.style.visibility = "visible"
         card.innerHTML = `
 
