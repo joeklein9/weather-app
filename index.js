@@ -8,7 +8,7 @@ let weatherDisplay = document.getElementById("weather-display")
 
 getWeatherBtn.addEventListener("click", function (){
     
-    if (cityInput.value !== "") {
+    if (cityInput.value !== ""&& cityInput.value !== undefined) {
     
     fetch (`https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&appid=e23500ef96a823d95fb0ddc49db5b795&units=imperial`) 
         .then (response => response.json())
