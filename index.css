@@ -79,6 +79,7 @@ button {
     border-style:none;
     height:30px;
     border-radius:5%;
+    opacity:60%;
 }
 
 #input-label {
