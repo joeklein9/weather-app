@@ -72,4 +72,13 @@ button {
 
 #city-input {
     margin-bottom:50px;
+    margin-top:10px;
+    font-family:Courier New, Courier, monospace;
+    border-style:none;
+    height:30px;
+    border-radius:5%;
+}
+
+#input-label {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
